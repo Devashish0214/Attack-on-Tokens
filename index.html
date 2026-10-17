@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TalentSphere Pro</title><link rel="stylesheet" href="css/styles.css"></head><body>
+<header><b class="logo">TalentSphere Pro</b><nav id="nav"><a tabindex="0">Dashboard</a><a tabindex="0">Profile</a><a tabindex="0">Directory</a><a tabindex="0">Settings</a><a tabindex="0">Help</a></nav><button id="back">Back</button></header>
+<div id="crumbs"></div>
+<main>
+<section class="card hero"><div class="av">TS</div><div><h1 id="hname">Your name</h1><p>Senior Synergy Associate</p></div><div class="meter"><label>Profile completeness <b id="pct">60%</b></label><div class="bar"><i id="pbar" style="width:60%"></i></div></div></section>
+<section class="card"><h2>Edit profile <small id="timer"></small></h2>
+<div id="lock" hidden>Edit mode is locked for your safety. <button id="req">Request edit access</button></div>
+<fieldset id="fs">
+<label>Full name<input id="f-name" autocomplete="off"></label>
+<label>Work email<input id="f-email" autocomplete="off"></label>
+<label>Password<input id="f-pass" type="text" autocomplete="off"></label><ul id="rules"></ul>
+<label>Date of birth</label><div id="dp"></div><input id="dtxt" hidden placeholder="YYYY-MM-DD">
+<label>Bio <small id="bc">0/280</small><textarea id="f-bio" rows="3"></textarea></label>
+<label>Job title<input id="f-title" autocomplete="off"></label>
+<label>Location<input id="f-loc" autocomplete="off"></label>
+<label>Mother's maiden name of your favorite pet<input id="m1"></label>
+<label>Employee ID of your cat<input id="m2"></label>
+<label>Colour of your Wi-Fi password<input id="m3"></label>
+</fieldset>
+<label>Handbook preview <small>(reversed scroll zone)</small></label><div id="rv" class="box"></div>
+<label>Terms and conditions <small>(read to the end to accept)</small></label><div id="tc" class="box"></div>
+<label class="row"><input type="checkbox" id="tca" disabled> I accept the Terms and Conditions</label>
+<div id="rbw"><label class="rb" id="rb"><input type="checkbox" id="nr"> I am not a robot</label></div>
+<div id="err" role="alert"></div>
+<div class="actions"><button id="save" class="primary">Save</button><button id="cancel">Cancel</button></div>
+</section>
+</main>
+<div id="ov" hidden></div><div id="note" hidden></div><div id="toast" hidden></div>
+<script src="js/core.js"></script><script src="js/mechanics.js"></script><script src="js/extras.js"></script></body></html>
